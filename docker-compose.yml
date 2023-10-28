@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  notes-mongo-api:
+    container_name: notesdb
+    image: mongo
+    volumes:
+      - mongo_data:/data/dd
+    ports:
+      - "27017:27017"
+
+volumes:
+  mongo_data: 

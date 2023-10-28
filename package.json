@@ -1,0 +1,37 @@
+{
+  "name": "api-notes",
+  "version": "1.0.0",
+  "description": "notes api  with mongodb database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:fix": "eslint --fix ./*.js",
+    "dev": "nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShewinVega/Api-Notes-Nodejs.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "mongoose",
+    "notes",
+    "notes-api",
+    "express"
+  ],
+  "author": "Edwin Vega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShewinVega/Api-Notes-Nodejs/issues"
+  },
+  "homepage": "https://github.com/ShewinVega/Api-Notes-Nodejs#readme",
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "eslint": "^8.52.0",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.6.3"
+  }
+}
