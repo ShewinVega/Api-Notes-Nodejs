@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const constants = require('./constants.config');
+const logger = require('./logger.config');
 
 require('dotenv').config();
 
@@ -9,15 +11,15 @@ const connection = async () => {
   try {
     
     /* eslint-disable no-undef */
-    await mongoose.connect(process.env.MONGO_URI, {
+    await mongoose.connect(constants.MONGO_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
 
-    console.log(`Database connected`);
+    logger.info(`Database Conected`);
 
   } catch (error) {
-    console.log(`Database connection failed: ${error}`);
+    logger.error(`Database connection failed: ${error}`);
   }
 
 }
