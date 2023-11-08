@@ -8,6 +8,15 @@ services:
       - mongo_data:/data/dd
     ports:
       - "27017:27017"
+  notes-mongo-api-test:
+    container_name: notesdbtest
+    image: mongo
+    volumes:
+      - mongo_test_data:/data/dd
+    ports:
+      - "27017:27017"
+  
 
 volumes:
-  mongo_data: 
+  mongo_data:
+  mongo_test_data: 
